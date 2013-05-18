@@ -10,6 +10,8 @@ package com.fredxcoders.dojo.example;
  * 		>= the 'greater than or equals to' operator
  * 		== the 'equality' operator (read as "is equal to") (very different than what we've used to set our variables! '=')
  * 		! the 'inverse' operator (read as "not", ie: '!true' would really mean 'false')
+ * 		= the 'assignment' operator, sets a value to another value
+ * 		+= the 'additive assignment' operator, sets a value to itself plus the addition 
  * We'll also be talking about several flow controllers
  * 		'if' checks if a condition is true
  * 		'else' handles all alternative cases
@@ -85,7 +87,7 @@ public class HelloDojo3 {
 	public static String formatArrayForPrinting(int[] array){
 		String formattedArray = "";
 		for(int counter=0; counter < array.length; counter++){
-			formattedArray = "[" + array[counter] + "] ";
+			formattedArray += "[" + array[counter] + "] ";
 		}
 		return formattedArray;
 	}
